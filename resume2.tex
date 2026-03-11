@@ -1,0 +1,116 @@
+\documentclass[11.9pt,a4paper]{article}
+\usepackage[left=15mm, right=15mm, top=14mm, bottom=10mm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{sourceserifpro}
+\usepackage{marvosym}
+\usepackage{wasysym}
+
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\titlespacing{\section}{0pt}{10pt}{5pt}
+\titleformat{\section}
+  {\bfseries\normalsize}
+  {}{0em}{}
+  [\vspace{1pt}\hrule\vspace{6pt}]
+
+\setlist[itemize]{leftmargin=1.5em, noitemsep, topsep=2pt, parsep=0pt, label=\textbullet}
+
+\begin{document}
+
+% ── Header ──────────────────────────────────────────────────────────────────
+\begin{center}
+  {\Large \textbf{Ankur Rana}}\\[7pt]
+  {\small
+    \Letter\ ranaankur39@gmail.com \enspace\textbar\enspace
+    \phone\ +91 7354902222 \enspace\textbar\enspace
+    \href{https://www.linkedin.com/in/ankurnitt21/}{linkedin.com/in/ankurnitt21/} \enspace\textbar\enspace
+    \href{https://github.com/ankurnitt21}{github.com/ankurnitt21}
+  }
+\end{center}
+
+\vspace{8pt}
+
+Software Engineer with 4.9 years of experience building high-performance distributed systems using C++ on Linux environments. Experienced in multithreaded programming supporting large-scale automation platforms.
+
+\vspace{8pt}
+
+% ── Skills ──────────────────────────────────────────────────────────────────
+\section*{SKILLS}
+
+\noindent
+\textbf{Languages} --- C++, C, Python, SQL\\[3pt]
+\textbf{Systems \& Tools} --- Linux, Network Programming (TCP/IP), Distributed Systems, Client--Server Architectures, Kafka, PostgreSQL, MySQL, Docker, Jenkins, Git, CMake, Debugging (GDB), AWS, STL, Boost
+
+\vspace{6pt}
+
+% ── Experience ──────────────────────────────────────────────────────────────
+\section*{EXPERIENCE}
+
+\noindent
+\textbf{Warehouse Automation Client}, Software Engineer \hfill 10/2024 -- Present | Fastenal India
+\begin{itemize}
+  \item Designed and developed high-performance backend services using \textbf{C++, STL, Boost} for distributed warehouse automation systems processing \textbf{50K+ daily order events}
+  \item Implemented \textbf{multithreaded client--server components} using POSIX threads to coordinate communication between warehouse control systems, improving system throughput and reducing order latency
+  \item Developed \textbf{TCP/IP socket-based network communication modules} to integrate automated systems such as ASRS units, conveyors, and packing machines
+  \item Designed data storage and retrieval layers using \textbf{MySQL} and \textbf{PostgreSQL}, implementing stored procedures and query logic using \textbf{PL/SQL} to enable efficient persistence of operational warehouse data
+  \item Built event-driven processing pipelines using \textbf{Apache Kafka and Redis} to process real-time warehouse events and ensure reliable distributed messaging
+  \item Optimized performance through efficient \textbf{memory management and lock-aware multithreaded processing}, improving system stability under high-load scenarios
+  \item Deployed and monitored services on \textbf{Linux environments} using \textbf{Docker} and automated build CI/CD pipelines with \textbf{Jenkins}, hosting services on \textbf{AWS EC2} and storing artifacts/log backups in \textbf{AWS S3}
+\end{itemize}
+
+\vspace{8pt}
+
+\noindent
+\textbf{Code Migration Suite}, Software Developer \hfill 01/2021 -- 09/2024 | Fastenal India
+\begin{itemize}
+  \item Migrated legacy warehouse management modules to modern \textbf{C++ distributed services}, improving system reliability and maintainability
+  \item Designed \textbf{object-oriented components} for distributed client/server architectures handling large-scale warehouse operations
+  \item Implemented \textbf{multithreaded processing pipelines} using producer--consumer patterns and synchronization primitives for high-volume inventory and order transactions
+  \item Developed \textbf{cross-platform services} compatible with both \textbf{Linux and Windows} ensuring consistent deployments
+ \item Integrated \textbf{PostgreSQL} and \textbf{MySQL} to store large-scale operational data, implementing stored procedures and query logic using \textbf{PL/SQL} to support distributed system workloads
+  \item Diagnosed complex system failures using \textbf{OS-level debugging tools such as GDB} and performance profiling utilities
+  \item Improved build reliability by standardizing \textbf{CMake-based build systems} and integrating automated CI pipelines with \textbf{Jenkins}
+\end{itemize}
+
+\vspace{6pt}
+
+% ── Projects ────────────────────────────────────────────────────────────────
+\section*{PROJECTS}
+
+\noindent
+\textbf{Smart Tube}, Python, Flask, HTML, CSS \hfill 02/2020 -- 04/2020
+\begin{itemize}
+  \item Built a Flask-based application that reduced video search time to \textbf{under 30 seconds} using optimized caption indexing
+  \item Improved content retrieval performance by implementing a custom caption recognition and indexing pipeline
+  \item Increased user engagement by \textbf{15\%} through deep-linking to relevant video segments
+\end{itemize}
+
+\vspace{5pt}
+
+\noindent
+\textbf{The Lost}, C++, Unreal Engine 3D \hfill 10/2019 -- 11/2019
+\begin{itemize}
+  \item Developed a first-person survival game using \textbf{Unreal Engine and C++} featuring AI-controlled zombie enemies
+  \item Implemented \textbf{NavMesh-based pathfinding} enabling enemies to dynamically track the player
+  \item Designed gameplay mechanics including player movement, enemy spawning, and survival objectives
+\end{itemize}
+
+% ── Education ───────────────────────────────────────────────────────────────
+\section*{EDUCATION}
+
+\noindent
+\textbf{National Institute of Technology, Trichy}, Master of Computer Applications \hfill 07/2018 -- 06/2021 | Trichy, India
+
+\vspace{5pt}
+
+\noindent
+\textbf{Jiwaji University}, Bachelor of Computer Applications \hfill 07/2015 -- 06/2018 | Gwalior, India
+
+\vspace{6pt}
+
+\end{document}
