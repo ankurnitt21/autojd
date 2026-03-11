@@ -27,11 +27,12 @@ playwright install chromium
 Set your OpenAI API key:
 
 ```bash
-# Windows PowerShell
-$env:OPENAI_API_KEY = "sk-..."
+# Create a .env file in project root
+OPENAI_API_KEY=sk-...
 
-# Linux/Mac
-export OPENAI_API_KEY="sk-..."
+# Optional: if pdflatex is not on PATH, set full executable path
+# Windows example:
+PDFLATEX_PATH=C:\\Program Files\\MiKTeX\\miktex\\bin\\x64\\pdflatex.exe
 ```
 
 ## Usage
@@ -70,3 +71,10 @@ tracker.xlsx          # Master tracking spreadsheet
 | Company | JD URL      | Resume Path              | Date       | Resume2 Path                |
 | ------- | ----------- | ------------------------ | ---------- | --------------------------- |
 | Google  | https://... | resume/Google/resume.pdf | 2026-03-11 | resume/Google/resume_v2.pdf |
+
+
+
+Preview first:
+py -m autojd --batch-file sample_jobs.txt --dry-run
+Then run:
+py -m autojd --batch-file sample_jobs.txt
